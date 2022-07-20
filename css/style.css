@@ -1,0 +1,325 @@
+ *{
+    margin: 0%;
+}  
+
+header{
+    /* border: solid 1px black; */
+    background-color: orange;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+a:hover{
+    color: blue;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.firstview{
+    /* border: solid 1px black; */
+    height: 95vh;
+    width: 100vw;
+    background-image: url(../img/about_mango_bg.jpeg);
+    background-size: cover;
+    /* display: flex; */
+    /* background: rgb(250, 211, 137) */
+    border-bottom: solid 50px orange;
+    
+}
+
+h4{
+    font-size: 100px;
+    text-align: end;
+    padding: 60px 60px 0 0;
+    font-family: 'Merriweather', serif;
+}
+
+p.sun{
+    font-size: 40px;
+    text-align: center;
+    margin: auto 0;
+    height: 20vh;
+    width: 20vw;
+}
+ 
+
+.ranking {
+    position: relative;
+}
+
+
+/*  マンゴーの効能*/
+h1{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 900;
+    margin-top: 100px;
+}
+
+.efficacy{
+    /* height: 100vh; */
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 200px;
+}
+
+.circle{
+    border: solid 1px orange;
+    height: 30vh;
+    width: 18vw;
+    border-radius: 30%;
+    text-align: center;
+    background-image: radial-gradient(white,orange);
+}
+
+h3{
+    margin: 30px  auto 30px;
+    border-bottom: solid 2px orange;
+    width: 60%;
+    font-size: 26px;
+}
+h5{
+    margin: 50px  auto;
+    border-bottom: solid 2px orange;
+    width: 60%;
+    font-size: 25px;
+}
+
+.circle p{
+    margin-top: 6vh;
+    font-size: 25px;
+}
+
+.mango{
+    display: block;
+    position: relative;
+}
+
+
+/* マンゴーの選び方 */
+.Choose{
+    /* border: solid 1px black;  */
+    height: 70vh;
+    width: 75vw;
+    margin: 20px auto;
+    position: relative;
+}
+
+.mango1,.mango2,.mango3,.mango4,.mango5{
+border: solid 1px orange;
+background: rgb(255,165,0);
+background: linear-gradient(15deg, rgba(255,165,0,1) 38%, rgba(255,140,0,1) 52%, rgba(255,69,0,1) 100%);
+border-radius: 100%;
+width: 25vw;
+height: 40vh;
+font-size: 15px;
+position: absolute;
+}
+
+.mango1{
+    top: 0%;
+    left: 0%;
+    padding: 100px 30px;
+}
+
+.mango2{
+    top: 0%;
+    right: 0%;
+    padding: 100px 30px;
+}
+
+.mango3{
+    top: 60%;
+    left: 0%;
+    padding: 100px 30px;
+}
+
+.mango4{
+    top: 60%;
+    right: 0%;
+    padding: 60px 30px;
+}
+
+.mango5{
+    top: 30%;
+    left: 33%;
+    padding: 100px 30px;
+}
+
+.Choose img{
+    position: absolute;
+    width: 35%;
+    height: 47%;
+    left: 24vw;
+    top: 18vh;
+}
+
+
+/* 販売場所 */
+.buy{
+    margin-top: 150px;
+}
+
+.buy-main{
+    /* border: solid 1px black; */
+    margin: 50px 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.buy img{
+    width: 20%;
+    height: 20%;
+    margin-bottom: 10px;
+
+}
+
+.buy_sub{
+    /* border: solid 1px black; */
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.buy p{
+    height: 15vh;
+    width: 50vw;
+}
+
+
+/* icons */
+.icons{
+    text-align: center;
+    font-size: 40px;
+}
+
+.fa-brands{
+    margin: 0 50px;
+}
+
+/* ネット販売 */
+.netbuy {
+    text-align: center;
+    margin: 50px;
+}
+
+/* 問い合わせ */
+.confirm{
+    width: 100vw;
+    margin-top: 20px;
+    /* height: 100vh;  */
+    text-align: center;
+}
+
+.box1, .box2, .box3{
+    border: solid 1px black;
+    width: 50vw;
+    height: 5vh;
+    margin: 10px auto;
+    color: rgb(113, 113, 113);
+    /* background-color: aqua; */
+}
+
+.box3{
+height: 30vh;
+ 
+}
+
+
+/* 
+
+.buttom input:hover{
+    cursor: pointer;
+    background-color: transparent;
+} */
+
+
+footer{
+    height: 5vh;
+    background-color: orange;
+    text-align: center;
+    margin: 100px auto 0;
+}
+
+
+/* レスポンシブ */
+@media screen and (max-width:780px) {
+   .first{
+        overflow: hidden;
+} 
+   
+    .efficacy{
+        display: block;
+    }
+    
+    .efficacy .text{
+        width: auto;
+        height: none;
+    }
+
+    .circle{
+        width: 80vw;
+        margin: 20px auto;
+    }
+
+    .Choose img{
+        height: auto;
+    }
+    /* .Choose p{
+        font-size: 13px;
+        width: auto;
+    } */
+
+    .Choose_top{
+        justify-content: center;
+    }
+    .Choose_under{
+        justify-content: center;
+    }
+    .Choose img{
+        width: 50%;
+        left: 16vw;
+        top: 19vh;
+    }
+
+    /* .buy{ */
+        /* display: block;
+        text-align: center;
+        margin: 0%;
+    } */
+
+    .buy p{
+        width: 100%;
+        text-align: start;
+    }
+
+    .buy img{
+        width: 35%;
+        height: auto;
+    }
+
+    .buy_sub{
+        margin: 0 30px;
+    }
+    
+
+    h1{
+        font-size: 30px;
+        margin-top: 5%;
+    }
+
+    h4{
+        font-size: 40px;
+        padding: 20px;
+        text-align: center;
+    }
+   
+}
+
+
